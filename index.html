@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trần Gia Huy - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      .hero-section {
+        background: linear-gradient(135deg, #1687b7 0%, #35a9b6 100%);
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .hero-section h1 {
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+      .hero-section p {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+      }
+      .btn-custom {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        padding: 12px 30px;
+        font-size: 1.1em;
+        margin: 10px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+      }
+      .btn-custom:hover {
+        background-color: white;
+        color: #667eea;
+        text-decoration: none;
+      }
+      .feature-section {
+        padding: 80px 0;
+        background-color: white;
+      }
+      .feature-box {
+        text-align: center;
+        padding: 40px 20px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        height: 100%;
+        background-color: rgb(232, 228, 228);
+      }
+      .feature-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+      .feature-icon {
+        font-size: 3em;
+        color: #667eea;
+        margin-bottom: 20px;
+      }
+      .about-section {
+        background-color: #e5e8eb;
+        padding: 80px 0;
+      }
+      .stats-section {
+        background-color: #167685;
+        color: white;
+        padding: 60px 0;
+      }
+      .stat-box {
+        text-align: center;
+      }
+      .stat-number {
+        font-size: 3em;
+        font-weight: bold;
+        display: block;
+      }
+      .footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+      }
+    </style>
+
+  </head>
+  <body>
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> Trần Gia Huy </a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="CV.html">CV</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+
+              <!-- here is the dropdown menu -->
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="email.html">Email</a></li>
+                  <li><a href="skype.html">Skype</a></li>
+             
+                </ul>
+              </li>
+
+              <!-- the end of the dropdown menu -->
+
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h1>Xin chào, tôi là Trần Gia Huy</h1>
+          <p>Một Full-stack developer tại TP.HCM</p>
+         
+          <a href="CV.html" class="btn btn-custom">CV của tôi</a>
+          <a href="#portfolio" class="btn btn-custom">Portfolio</a>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="feature-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 style="margin-bottom: 50px;">Những gì tôi làm</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="feature-box">
+                <div class="feature-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Phát triển website và ứng dụng web hiện đại với các công nghệ tiên tiến nhất như HTML5, CSS3, JavaScript, và các framework phổ biến.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box">
+                <div class="feature-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Thiết kế giao diện người dùng trực quan và thân thiện, tạo ra trải nghiệm tuyệt vời cho người dùng trên mọi thiết bị.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box">
+                <div class="feature-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Tạo ra các website responsive hoàn hảo, hoạt động mượt mà trên mọi thiết bị từ desktop đến mobile.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Về tôi</h2>
+              <p>Là một sinh viên CNTT sắp tốt nghiệp từ trường đại học Văn Lang, tôi đã có nhiều project khác nhau về web developtment.</p>
+              
+              <p>Với tinh thần luôn học hỏi và tìm kiếm những thứ mới mẻ, cùng với những kinh nghiệm trong ngành sẵn có. Tôi tin mình có thể cống hiến và tạo ra những giá trị thiết thực cho công ty</p>
+              
+              <a href="CV.html" class="btn btn-primary">Tìm hiểu thêm về tôi</a>
+            </div>
+            <div class="col-md-6">
+              <img src="/thuchanh03/images/workspace.jpg" alt="Workspace" class="img-responsive" style="border-radius: 15px;">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="stat-box">
+                <span class="stat-number">10+</span>
+                <p>Dự án hoàn thành</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="stat-box">
+                <span class="stat-number">20</span>
+                <p>Khách hàng hài lòng</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="stat-box">
+                <span class="stat-number">4</span>
+                <p>Năm kinh nghiệm</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="stat-box">
+                <span class="stat-number">24/7</span>
+                <p>Hỗ trợ khách hàng</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Preview Section -->
+      <section id="portfolio" style="padding: 80px 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 style="margin-bottom: 50px;">Portfolio Nổi bật</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="/thuchanh03/images/nhahang.jpg" alt="Nhà hàng Thằng Bờm">
+                <div class="caption">
+                  <h3>HTML/CSS/JAVASCRIPT + PHP: Nhà Hàng Thằng Bờm</h3>
+                  <p>Đây là dự án website giới thiệu nhà hàng và đặt bàn cho khách hàng của Nhà Hàng Thằng Bờm</p>
+                  <p><a href="https://trgiahuy14.github.io/DoAn_NhaHangThangBom/" class="btn btn-primary">Xem chi tiết</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="/thuchanh03/images/gioithieunhom.jpg" alt="Gioi thieu nhom">
+                <div class="caption">
+                  <h3>HTML/CSS: Website giới thiệu nhóm của môn học</h3>
+                  <p>Đây là dự án nhỏ của tôi, dự án nhằm giới thiệu thông các thành viên trong nhóm của một môn học trong trường</p>
+                  <p><a href="https://trgiahuy14.github.io/Do-an-nhom-2H1T/" class="btn btn-primary">Xem chi tiết</a></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="/thuchanh03/images/appbanhang.jpg" alt="NODEJS app ban hang">
+                <div class="caption">
+                  <h3>NODEJS: Website bán hàng thiết bị điện tử</h3>
+                  <p>Đây làm một website bán hàng có các chức năng cần thiết như: xem danh sách sản phẩm, detail sản phẩm, đặt hàng, đăng ký, đăng nhập tài khoản <br> Sử dụng công nghệ NODEJS <br> Website sử dụng HTML/CSS, JavaScript, PHP để kết nối database và GET POST đơn giản</p>
+                  <p><a href="https://trgiahuy14.github.io/Do-an-nhom-2H1T/" class="btn btn-primary">Xem chi tiết</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" style="background-color: #dddddd; padding: 80px 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h2>Liên hệ với tôi</h2>
+              <p style="font-size: 1.2em; margin-bottom: 40px;">Bạn có dự án thú vị? Hãy liên hệ để chúng ta thảo luận!</p>
+              
+              <div class="row">
+                <div class="col-md-4">
+                  <h4>📧 Email</h4>
+                  <p>huy.2174802010160@vanlanguni.vn</p>
+                </div>
+                <div class="col-md-4">
+                  <h4>📞 Điện thoại</h4>
+                  <p>(+84) 901438544</p>
+                </div>
+                <div class="col-md-4">
+                  <h4>💬 Skype</h4>
+                  <p>TrGiaHuy14</p>
+                </div>
+              </div>
+              
+              <div style="margin-top: 40px;">
+                <a href="CV.html" class="btn btn-primary btn-lg">Tải CV của tôi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; Copyright to Trần Gia Huy</p>
+        </div>
+      </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+      // Smooth scrolling for anchor links
+      $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(event) {
+          var target = $(this.getAttribute('href'));
+          if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+              scrollTop: target.offset().top - 70
+            }, 1000);
+          }
+        });
+        
+        // Add some padding to body for fixed navbar
+        $('body').css('padding-top', $('.navbar-fixed-top').outerHeight() + 'px');
+      });
+    </script>
+
+  </body>
+</html>
